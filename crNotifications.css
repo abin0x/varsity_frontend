@@ -1,0 +1,410 @@
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.notification-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.notification-card small {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}
+
+
+/* Notification container styling */
+#notification-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification card styling */
+.notification-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.notification-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification title styling */
+.notification-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Notification description styling */
+.notification-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Course and file styling */
+.notification-card p strong {
+    color: #222;
+}
+
+/* Date styling */
+.notification-card small {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}
+
+/* Link styling */
+.notification-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.notification-card a:hover {
+    text-decoration: underline;
+}
+
+/* crNotifications.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notification-container {
+    margin-bottom: 20px;
+}
+
+.notification-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.notification-card h2 {
+    margin-top: 0;
+}
+
+.show-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container and Form Styles */
+.container {
+    max-width: 600px; /* Increase the maximum width */
+    background: #F8F9FD;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 30px 40px; /* Increase padding for more space */
+    border: 5px solid #FFFFFF;
+    box-shadow: rgba(133, 189, 215, 0.87) 0px 30px 30px -20px;
+    margin: 20px auto;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: rgba(133, 189, 215, 0.87) 0px 40px 40px -20px;
+    transform: translateY(-5px);
+}
+
+header {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 40px 40px 0 0; /* Rounded top corners */
+    box-shadow: rgba(133, 189, 215, 0.5) 0px 10px 15px -10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px; /* Increase heading size */
+    color: rgb(16, 137, 211);
+    margin-bottom: 20px; /* Space below heading */
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.logout-button{
+    cursor: pointer;
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+.logout-button:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+/* Keyframes for heading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form {
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.form-label {
+    display: block;
+    margin-top: 15px; /* Increase margin for spacing */
+    font-size: 16px; /* Increase label font size */
+    color: #333;
+}
+
+.input, .form-textarea, .form-select {
+    width: 100%;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    padding: 15px; /* Increase padding for larger input fields */
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    font-size: 16px; /* Increase font size */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #4A90E2;
+    box-shadow: rgba(74, 144, 226, 0.3) 0px 0px 8px;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding: 15px; /* Increase padding for larger button */
+    margin: 20px auto; /* Increase margin for spacing */
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(133, 189, 215, 0.5) 0px 8px 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: linear-gradient(45deg, rgb(18, 177, 209) 0%, rgb(16, 137, 211) 100%);
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 15px 20px;
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(2px);
+    box-shadow: rgba(133, 189, 215, 0.8) 0px 10px 15px;
+}
+
+.message {
+    margin-top: 20px; /* Increase margin for spacing */
+    text-align: center;
+    color: #d9534f;
+    font-weight: bold;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Keyframes for message animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background-color: #f4f4f9;
+}
+
+a {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 400ms ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #222;
+}
+
+/* Menu Styles */
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    background: rgb(255, 255, 255);
+    border-radius: 0% 0% 100% 50%;
+    transform: translateX(-300px);
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    z-index: 1000;
+}
+
+nav.nav-open {
+    transform: translateX(0);
+    border-radius: 0;
+}
+
+nav .menu-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    width: 30px;
+    height: 2px;
+    background: #46AEF7;
+    margin: 5px 0;
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+    transform: rotate(45deg) translateY(10px);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav .menu-btn .line.line--2 {
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    transform: translate(30px);
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    transform: rotate(-45deg) translateY(-10px);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+    
+}
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+nav .nav-links .link {
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+    /* margin-bottom: 20px; */
+}
+
+nav .nav-links .link:hover {
+    color: rgba(0, 0, 0, 0.5);
+}

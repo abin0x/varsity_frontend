@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog Post</title>
+    <link rel="stylesheet" href="blog.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="assignmentSubmit.html" class="link">Submit Assignment</a>
+            <a href="stdAssignment.html" class="link">Assignment</a>
+            <a href="StdNotification.html" class="link">Notification</a>
+            <a href="profile.html" class="link">About Me</a>
+            <a href="profileUpdate.html" class="link">Profile Update</a>
+            <a id="logout-button" class="logout-button">Logout</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Create a New Blog Post</h1>
+    </header>
+    <div class="container">
+        <div class="form">
+            <form id="create-blog-form">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" class="input" name="title" placeholder="Enter blog title" required>
+
+                <label for="content" class="form-label">Content</label>
+                <textarea id="content" class="form-textarea" name="content" rows="6" placeholder="Write your blog content here" required></textarea>
+
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" id="image" class="input" name="image" accept="image/*">
+
+                <button type="submit" class="login-button" id="submit-button">Submit</button>
+                
+                <div class="message" id="response-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="blog.js"></script> 
+    <script src="./ham.js"></script>
+</body>
+</html>

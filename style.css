@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  
+}
+  
+.container {
+    
+    max-width: 500px;
+    /* width: 800px; */
+    /* height: 400px; */
+    background: #F8F9FD;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 20px 30px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    margin: 20px;
+    margin-left: 400px;
+  }
+  
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+  }
+  
+.form {
+    margin-top: 20px;
+  }
+  
+.form .input {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+  }
+  
+.form .input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+  }
+  
+.form .input::placeholder {
+    color: rgb(170, 170, 170);
+  }
+  
+.form .input:focus {
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+  }
+  
+.form .forgot-password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+.form .forgot-password a {
+    font-size: 11px;
+    color: #0099ff;
+    text-decoration: none;
+  }
+  
+.form .login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+.form .login-button:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+    cursor: pointer;
+  }
+  
+.form .login-button:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+  }
+  
+.social-account-container {
+    margin-top: 25px;
+  }
+  
+  .social-account-container .title {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(170, 170, 170);
+  }
+  
+  .social-account-container .social-accounts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .social-account-container .social-accounts .social-button {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-account-container .social-accounts .social-button .svg {
+    fill: white;
+    margin: auto;
+  }
+  
+  .social-account-container .social-accounts .social-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-account-container .social-accounts .social-button:active {
+    transform: scale(0.9);
+  }
+  
+  .agreement {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .agreement a {
+    text-decoration: none;
+    color: #0099ff;
+    font-size: 9px;
+  }
+  
+
+
+
+
+.form-label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form select {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+
+.file-chosen {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.signup-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.signup-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+.centered-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: -280px;
+    /* position: absolute; */
+    padding: 1px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 10px 10px -5px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 8px 10px -8px;
+}
+.top-bar {
+  background: #1BAF63;
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
+  color: #fff;
+  background-image: url(./images/header-shape.webp);
+}
+
+
+
+.top-bar .contact-info span {
+  margin-right: 20px;
+  font-size: 15px;
+  
+}
+
+.top-bar .login-register a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    /* position: fixed;  */
+  
+}
+.navbar .logo img {
+    margin-left: 80px;
+    justify-content: center;
+}
+.logo img {
+  height: 40px;
+}
+
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  transition: 0.3s;
+  
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: -110px;
+  /* background-color: #333; */
+  width: 200px; 
+  border-radius: 5px;
+  
+  
+}
+
+.nav-links li {
+  padding: 10px 15px;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* responsive  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide links by default on smaller screens */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on the height of your navbar */
+      right: 20px;
+      background-color: #fff; /* Background color for the dropdown */
+      width: 200px; /* Adjust the width of the dropdown menu */
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: shadow for dropdown */
+  }
+
+  .nav-links.active {
+      display: flex; /* Show links when hamburger menu is active */
+  }
+
+  .hamburger {
+      display: flex; /* Show hamburger menu icon on smaller screens */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+      display: none; /* Hide hamburger menu icon on larger screens */
+  }
+
+  .nav-links {
+      display: flex; /* Show links by default on larger screens */
+  }
+}
+
+/* Responsive Styles for Mobile Devices */
+
+/* General adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Reduce container width on smaller screens */
+    margin: 20px auto; /* Center container and add margin */
+    padding: 15px; /* Adjust padding for smaller screens */
+    box-shadow: none; /* Optionally remove shadow for simpler look */
+    margin-left: 0; /* Reset margin-left */
+  }
+
+  .heading {
+    font-size: 24px; /* Smaller font size for headings */
+    margin-top: 10px; /* Reduce margin for better spacing */
+  }
+
+  .form .input {
+    padding: 12px; /* Adjust padding for input fields */
+    margin-top: 15px; /* Reduced margin for input fields */
+  }
+
+  .form .login-button,
+  .signup-button {
+    padding: 12px; /* Adjust button padding */
+    margin: 15px 0; /* Adjust margin around buttons */
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+
+  .social-account-container {
+    margin-top: 20px; /* Adjust margin for social accounts section */
+  }
+
+  .social-account-container .social-accounts {
+    gap: 10px; /* Reduced gap between social buttons */
+  }
+
+  .social-account-container .social-accounts .social-button {
+    width: 35px; /* Adjust size of social buttons */
+    height: 35px; /* Adjust size of social buttons */
+  }
+
+  .form-label {
+    font-size: 12px; /* Smaller font size for labels */
+  }
+
+  .form select {
+    padding: 12px; /* Adjust padding for select fields */
+    margin-top: 10px; /* Reduced margin for select fields */
+  }
+
+  .file-chosen {
+    font-size: 10px; /* Smaller font size for file chosen text */
+  }
+}
+
+/* For Very Small Screens */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%; /* Full width for very small screens */
+    padding: 10px; /* Further reduced padding */
+  }
+
+  .heading {
+    font-size: 20px; /* Even smaller font size for very small screens */
+  }
+
+  .form .input {
+    padding: 10px; /* Smaller padding for input fields */
+  }
+
+  .form .login-button,
+  .signup-button {
+    padding: 10px; /* Adjust button padding */
+    font-size: 12px; /* Even smaller font size for buttons */
+  }
+
+  .social-account-container .social-accounts {
+    gap: 5px; /* Further reduced gap between social buttons */
+  }
+
+  .social-account-container .social-accounts .social-button {
+    width: 30px; /* Smaller size of social buttons */
+    height: 30px; /* Smaller size of social buttons */
+  }
+
+  .form-label {
+    font-size: 10px; /* Even smaller font size for labels */
+  }
+
+  .form select {
+    padding: 10px; /* Smaller padding for select fields */
+  }
+
+  .file-chosen {
+    font-size: 8px; /* Smaller font size for file chosen text */
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="StdNotification.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="studentDashboard.html" class="link">Dashboard</a>
+            
+            <a href="assignmentSubmit.html" class="link">Submit Assignment</a>
+            <a href="stdAssignment.html" class="link">Assignment</a>
+            <!-- <a href="notification.html" class="link">Notification</a> -->
+            <a href="profile.html" class="link">About Me</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Notifications Dashboard</h1>
+    </header>
+    <div class="dashboard-container">
+        <div class="dashboard-row">
+            <div class="dashboard-card">
+                <h3>Notifications</h3>
+                <table id="notifications-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Message</th>
+                            <th>Course</th>
+                            <th>Teacher</th>
+                            <th>Created At</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Notifications will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="StdNotification.js"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>

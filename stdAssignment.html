@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="stdAssignment.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="studentDashboard.html" class="link">Dashboard</a>
+            
+            <a href="assignmentSubmit.html" class="link">Submit Assignment</a>
+            <!-- <a href="stdAssignment.html" class="link">Assignment</a> -->
+            <a href="StdNotification.html" class="link">Notification</a>
+            <a href="profile.html" class="link">About Me</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Assignment Dashboard</h1>
+    </header>
+    <div class="dashboard-container">
+        <!-- Assignments Section -->
+        <div class="dashboard-row">
+            <div class="dashboard-card">
+                <h3>Assignments</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Course</th>
+                            <th>Created At</th>
+                        </tr>
+                    </thead>
+                    <tbody id="assignments-body">
+                        <!-- Assignment rows will be dynamically injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="stdAssignment.html"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>

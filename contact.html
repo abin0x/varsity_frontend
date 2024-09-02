@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHGCSqTRvemZ1fuxB5QvaryFEggotKu_w"></script>
+</head>
+
+<body>
+    <header class="banner">
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="#">Home</a> &gt; <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <div class="info-card">
+                <img src="images/2.png" alt="">
+                <h3>Address</h3>
+                <p>Hajee Mohammad Danesh Science And Technology University<br>Dinajpur<br>5200</p>
+            </div>
+            <div class="info-card">
+                <img src="images/3.png" alt="">
+                <h3>Contact</h3>
+                <p>Mobile: (+880) 1780 - 946249<br>Mail: mahmudulabin@gmail.com</p>
+            </div>
+            <div class="info-card">
+                <img src="images/4.png" alt="">
+                <h3>Office Hour</h3>
+                <p>Sunday - Thursday: 09:00 AM - 04:00 PM<br>Sunday &amp; Monday: 10:30 - 22:00</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Questions?<br>Feel free to contact us.</h2>
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Subject" required>
+                    <input type="tel" placeholder="Phone" required>
+                </div>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <script>
+        function initMap() {
+            var hstuLocation = { lat: 25.6275, lng: 88.6331 }; // HSTU, Dinajpur, Bangladesh
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: hstuLocation
+            });
+
+            var marker = new google.maps.Marker({
+                position: hstuLocation,
+                map: map
+            });
+        }
+
+        window.onload = initMap;
+    </script>
+</body>
+
+</html>

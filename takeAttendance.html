@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Attendance</title>
+    <link rel="stylesheet" href="takeAttendance.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="crDashboard.html" class="link">CR Dashboard</a>
+            <a href="createCRnotification.html" class="link">Create Notification</a>
+            <a href="blog.html" class="link">Create Blog</a>
+            <a href="submitResearch.html" class="link">Research Paper</a>
+            <a href="profile.html" class="link">About Me</a>
+            <a href="profileUpdate.html" class="link">Profile Update</a>
+            <a id="logout-button" class="logout-button">Logout</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Take Attendance</h1>
+    </header>
+
+    <div class="container">
+        <form id="attendance-form">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required class="form-select">
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required class="input">
+            <label for="date">Student:</label>
+            <div id="students-list" class="student-checkbox-list">
+                <!-- Example checkbox:
+                <input type="checkbox" id="student_1" name="student_1" value="present"> Student 1 -->
+                <!-- Student checkboxes will be populated dynamically -->
+            </div>
+
+            <button type="submit" class="submit-button">Submit Attendance</button>
+            <div id="response-message" class="message"></div>
+        </form>
+    </div>
+
+    <script src="takeAttendance.js"></script>
+    <script src="./ham.js"></script> <!-- Include your JS files -->
+</body>
+</html>

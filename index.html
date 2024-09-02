@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- my web icon -->
+    <link rel="shortcut icon" href="images/lla.png" type="image/x-icon" />
+    <title>Varsity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./dummy.css">
+    <link rel="stylesheet" href="./blog_card.css">
+    
+    <!-- <link rel="stylesheet" href="./div.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>+880 1780-946249</span>
+                <span>mahmudulabin@email.com</span>
+            </div>
+            <div class="login-register" id="auth-links">
+                
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo (3).png" alt=""></a>
+                <!-- <h1>GLAXDU</h1> -->
+
+            </div>
+            <span class="menu-icon">&#9776;</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a id="logout-button" class="logout-button">Logout</a></li> -->
+                <!-- <button id="logout-button" class="logout-button">Logout</button> -->
+
+                <!-- <li><a href="#">Shop</a></li> -->
+                <li><a href="#courses">Course</a></li>
+                <li><a href="#team">Teacher</a></li>
+                <li><a href="#blogs">Blog</a></li>
+                <li><a href="#reacherss">Research </a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown" id="profile-menu" style="display: none;">
+                    <a href="#" id="contact-link">Profile</a>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <a href="teacherDashboard.html">Teachers</a>
+                        <a href="studentDashboard.html">Students</a>
+                        <a href="crDashboard.html">CR</a>
+                    </div>
+                </li>
+                <!-- <li><a href="studentDashboard.html">Student</a></li> -->
+                
+            </ul>
+            <!-- <span class="menu-icon">&#9776;</span> -->
+            
+        </nav>
+    </header>
+    <div class="notification-ticker ticker-wrapper">
+        <span class="ticker-content ticker" id="notification-content">Loading notifications...</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('images/slide-02-1920x810.jpg');">
+            <div class="hero-content">
+                <h2>Streamline Your Class Schedules</h2>
+                <p>Effortlessly manage and view class schedules with real-time updates for teachers and students.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Learn More</a>
+                    <a href="#" class="btn btn-light">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('images/Technical-Innovation-defination.png');">
+            <div class="hero-content">
+                <h2>Stay Informed with Timely Notifications</h2>
+                <p>Receive important updates on assignments, class changes, and announcements directly in your dashboard.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Explore Features</a>
+                    <a href="#" class="btn btn-light">See Notifications</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('images/33.jpg');">
+            <div class="hero-content">
+                <h2>Manage Assignments Efficiently</h2>
+                <p>Teachers can create assignments and students can easily track deadlines and submissions.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Discover More</a>
+                    
+                    <a href="#" class="btn btn-light">Join Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+    <!-- dummy  -->
+
+    <section class="stats-section">
+        <div class="stat">
+            <div class="stat-number" data-target="25">0</div>
+            <p>Years Since Establishment</p>
+        </div>
+        <div class="stat">
+            <div class="stat-number" data-target="12000">0</div>
+            <p>Students In 2023</p>
+        </div>
+        <div class="stat">
+            <div class="stat-number" data-target="920">0</div>
+            <p>Staff</p>
+        </div>
+        <div class="stat">
+            <div class="stat-number" data-target="300000">0</div>
+            <p>Alumni</p>
+        </div>
+        <div class="stat">
+            <div class="stat-number" data-target="60">0</div>
+            <p>Partners</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="images">
+            <img src="images/banner-home.webp" alt="Image 1">
+            <!-- <img src="images/AI.webp" alt="Image 1"> -->
+            <!-- <img src="https://via.placeholder.com/150" alt="Image 2">
+            <img src="https://via.placeholder.com/150" alt="Image 3"> -->
+        </div>
+        <div class="text">
+            <h2>EMPOWERING TOMORROW</h2>
+        <p>At HSTU, we are committed to nurturing innovative minds and fostering a spirit of inquiry that transcends boundaries. Our mission is to empower the next generation of leaders, thinkers, and creators to make a lasting impact on the world. We believe that through collaboration, dedication, and a shared vision, we have the strength to transform challenges into opportunities and shape a brighter future for all.</p>
+            <p class="signature"><img src="./images/shaping-the-future-v3-signer.webp" alt=""></p>
+        </div>
+    </section>
+
+  
+
+    <!-- About us  -->
+    
+    <section id="about" class="about-university">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">HSTU</span>
+                <h2>About Our University</h2>
+            </div>
+            <p class="subheading">
+                At Hajee Mohammad Danesh Science and Technology University<br> we believe that education thrives on diversity, innovation, and the free exchange of ideas.
+            </p>
+            <div class="slider">
+                <div class="slider-content active" data-slide="0">
+                    <img src="images/hstu_main_gate.jpg" alt="Campus life">
+                    <div class="campus-info">
+                        <h3>WELCOME TO HSTU</h3>
+                        <h1>Excellence in Education</h1>
+                        <p>
+                            Hajee Mohammad Danesh Science and Technology University stands as a beacon of higher education, fostering a dynamic learning environment where students are encouraged to explore, innovate, and excel.
+                        </p>
+                        <button class="schedule-tour">Schedule A Tour</button>
+                    </div>
+                </div>
+
+                <div class="slider-content" data-slide="1">
+                    
+                    <img src="images//r1.jpg" alt="Students walking">
+                    <div class="campus-info">
+                        <h3>RESEARCH & INNOVATION</h3>
+                        <h1>Leading Breakthroughs in Science</h1>
+                        <p>
+                            Our state-of-the-art research facilities and dedicated faculty members drive cutting-edge research and innovation, paving the way for future scientific advancements and discoveries.
+                        </p>
+                        <button class="schedule-tour">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="slider-content" data-slide="2">
+                    <img src="images/l1.jpg" alt="Library">
+                    <div class="campus-info">
+                        <h3>EXTENSIVE LIBRARY RESOURCES</h3>
+                        <h1>Supporting Academic Success</h1>
+                        <p>
+                            Our library is equipped with a vast collection of academic resources, providing students and researchers with the tools they need to support their learning and academic pursuits.
+                        </p>
+                        <button class="schedule-tour">Explore Library</button>
+                    </div>
+                </div>
+
+                <div class="slider-content" data-slide="3">
+                    <img src="images/c2.png" alt="Classroom">
+                    <div class="campus-info">
+                        <h3>ENGAGING CLASSROOM EXPERIENCE</h3>
+                    <h1>Interactive and Inclusive Learning</h1>
+                    <p>
+                        We offer an interactive and inclusive classroom environment that encourages participation, collaboration, and critical thinking, ensuring a well-rounded educational experience for every student.
+                    </p>
+                        <button class="schedule-tour">Join Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-navigation">
+                <button class="slider-prev">←</button>
+                <button class="slider-page active" data-slide="0">01</button>
+                <button class="slider-page" data-slide="1">02</button>
+                <button class="slider-page" data-slide="2">03</button>
+                <button class="slider-page" data-slide="3">04</button>
+                <button class="slider-next">→</button>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Join Our World Class Best Courses</h2>
+                <p>Explore world-class courses designed to help you excel. <br> Discover your path to success with our expertly crafted programs.</p>
+                <!-- <a href="#" class="btn view-all-courses">View All Course</a> -->
+            </div>
+            
+            <div class="filter-container">
+                <label for="department-filter">Filter by Department:</label>
+                <select id="department-filter">
+                    <option value="">All Departments</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Design">UX/UI Design</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                </select>
+            </div>
+    
+            <div id="course-list" class="course-cards">
+                <!-- Course cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="banner">
+            <!-- <h3 class="instructor-tag">INSTRUCTORS</h3> -->
+            <h1 class="banner-title">Popular Categories</h1>
+            <div class="categories-container">
+                <div class="category-card">
+                    <img src="images/icon-09.png" alt="Chemistry">
+                    <h3>Chemistry</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-10.png" alt="Physics">
+                    <h3>Physics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-11.png" alt="Language">
+                    <h3>Language</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-12.png" alt="Business">
+                    <h3>Business</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-08.png" alt="Photography">
+                    <h3>Photography</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-07.png" alt="Rocket Science">
+                    <h3>Rocket Science</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-06.png" alt="Math">
+                    <h3>Math</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/icon-05.png" alt="Food & Recipe">
+                    <h3>Food & Recipe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievement-section">
+        <div class="achievement-header">
+            <h2>Our <span>Achievement</span></h2>
+            <p>We strive for excellence in education, research, and service to the community at <br> Hajee Mohammad Danesh Science and Technology University.</p>
+        </div>
+        <div class="achievement-stats">
+            <div class="stat-item">
+                <img src="images/achieve-1.webp" alt="Students Icon">
+                <h3>12000</h3>
+                <p>STUDENTS</p>
+            </div>
+            <div class="stat-item">
+                <img src="images/achieve-2.webp" alt="Graduate Icon">
+                <h3>2370</h3>
+                <p>GRADUATE</p>
+            </div>
+            <div class="stat-item">
+                <img src="images/achieve-3.webp" alt="Award Icon">
+                <h3>160</h3>
+                <p>AWARD WINNING</p>
+            </div>
+            <div class="stat-item">
+                <img src="images/achieve-4.webp" alt="Faculties Icon">
+                <h3>09</h3>
+                <p>FACULTIES</p>
+            </div>
+        </div>
+    
+        <div class="testimonial-section">
+            <div class="testimonial">
+                <img id="testimonial-image" src="images/testi-b1.webp" alt="Testimonial Image">
+                <div class="testimonial-content" id="testimonial-content">
+                    <p>"As a faculty member, I have witnessed the dedication and passion that our students bring to their studies every day. HSTU is truly a hub of knowledge."</p>
+                    <h4>AYESHA HOQUE</h4>
+                    <p>Students Of AMMT Department</p>
+                </div>
+            </div>
+    
+            <div class="testimonial-thumbnails">
+                <img src="images/testi-b1.webp" alt="Review 1" onclick="changeTestimonial(1)">
+                <img src="images/testi-b2.webp" alt="Review 2" onclick="changeTestimonial(2)">
+                <img src="images/testi-b3.webp" alt="Review 3" onclick="changeTestimonial(3)">
+                <img src="images/testi-b1.webp" alt="Review 4" onclick="changeTestimonial(4)">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <h2>Register Now</h2>
+            <p>Winter Admission is Open! Take advantage of our special discount for the winter batch.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" name="first_name" placeholder="First Name">
+                    <input type="text" name="last_name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Phone">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <!-- <div class="badge">
+            <p>Winter 2019 Admission</p>
+        </div> -->
+    </section>
+
+   <!-- Best Teacher Section -->
+<section id="team" class="teachers-section">
+    <div class="container">
+        <h2 class="te"><span class="greens">Best</span> Teacher</h2>
+        <p class="tp">Meet our distinguished faculty members who are dedicated to providing exceptional education and fostering a transformative learning experience.</p>
+        <div class="teachers-list">
+            <!-- Card 1 -->
+            <div class="teacher-card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/teacher-2.webp" alt="Robi Khan">
+                            <h3>Robi Khan</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Lecturer with expertise in Computer Science, specializing in Artificial Intelligence and Machine Learning.</p>
+                            <div class="socialbar">
+                                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="teacher-card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/teacher-3.webp" alt="Jui Khan">
+                            <h3>Jui Khan</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Software Engineering lecturer, specializing in developing scalable and secure web applications.</p>
+                            <div class="socialbar">
+                                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="teacher-card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/teacher-4.webp" alt="Fawd Khan">
+                            <h3>Fawd Khan</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Lecturer specializing in Data Science, with a deep knowledge of statistical analysis and big data technologies.</p>
+                            <div class="socialbar">
+                                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="teacher-card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/teacher-1.webp" alt="Teacher">
+                            <h3>Mamunur Rashid</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Lecturer in Software Engineering, focused on developing scalable and secure web applications.</p>
+                            <div class="socialbar">
+                                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- event  -->
+
+    <section class="events-section">
+        <div class="section-header">
+            <span class="label">Latest Events</span>
+            <h2>Our Upcoming Events</h2>
+        </div>
+
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="images/event-01.jpg" alt="Graphics Design Conference">
+                <div class="event-info">
+                    <span class="category">Art Competition</span>
+                    <h3>Graphics design conference</h3>
+                    <p>Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.</p>
+                    <div class="event-meta">
+                        <span class="date">30 Mar. 2023</span>
+                        <span class="location">Location : HSTU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="images/event-02.jpg" alt="Learning English">
+                <div class="event-info">
+                    <span class="category">Learning English</span>
+                    <h3>Important learning english</h3>
+                    <p>Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.</p>
+                    <div class="event-meta">
+                        <span class="date">01 Apr. 2023</span>
+                        <span class="location">Location : HSTU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="images/event-03.jpg" alt="Annual Creative Meetup">
+                <div class="event-info">
+                    <span class="category">Creative Day</span>
+                    <h3>Annual creative meetup</h3>
+                    <p>Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.</p>
+                    <div class="event-meta">
+                        <span class="date">02 Apr. 2023</span>
+                        <span class="location">Location : HSTU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <img src="images/event-04.jpg" alt="Digital Arts and Reshaping">
+                <div class="event-info">
+                    <span class="category">Art Competition</span>
+                    <h3>Digital arts and reshaping</h3>
+                    <p>Attend the activities and analyze treasured recommendations from the pinnacle eLearn professionals.</p>
+                    <div class="event-meta">
+                        <span class="date">03 Apr. 2023</span>
+                        <span class="location">Location : HSTU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog  -->
+    
+        <section class="bl">
+            <section id="blogs" class="container">
+                <div class="section-header">
+                    <span class="label"></span>
+                    <h2>Explore Our Latest Updates</h2>
+                    <p class="tpblog">Stay informed with the latest developments, research, and innovations from HSTU. Discover how we are leading the future of education and research.</p>
+                </div>
+                <!-- <h2 class="tblog"><span class="greens">Check Out Our </span>Latest Features</h2> -->
+                <!-- <p class="tpblog">Stay updated with the latest insights and trends from our experts</p> -->
+                 
+                <div class="blog-container" id="blog-container">
+                    <!-- Blog posts will be inserted dynamically here -->
+                </div>
+            
+                <!-- "Show More" button -->
+                <div class="show-more-container">
+                    <button id="show-more-btn" class="show-more-btn">Show More</button>
+                </div>
+             </section>
+        </section>
+
+
+        <!-- Budget  -->
+
+        <section class="research-section">
+            <div class="section-header">
+                <span class="label">initiatives Research</span>
+                <h2>Our University research initiatives</h2>
+            </div>
+            <div class="content">
+                <div class="left-side">
+                    <img src="images/1 (1).jpg" alt="Students discussing research">
+                </div>
+                <div class="right-side">
+                    <h2>We are dedicated to academic excellence, diversity & inclusion, research</h2>
+                    <p class="subtitle">Pioneering advancements in agricultural sciences, veterinary medicine, and engineering</p>
+                    <p class="description">Dedicated to fostering innovation, excellence, and sustainability in research and education</p>
+                    <div class="stat-container">
+                        <div class="stat-item large">
+                            <h2>$1.18b</h2>
+                            <p>Sponsored research budget</p>
+                        </div>
+                        <!-- <hr> -->
+                        <div>
+                            <div class="stat-item">
+                                <h3>15 Institutes</h3>
+                                <p>Cross interdisciplinary boundaries</p>
+                            </div>
+                            <!-- <div class="stat-item">
+                                <h3>Feldman Lab</h3>
+                                <p>The EMF 36 study investigates</p>
+                            </div> -->
+                            <!-- HSTU Data -->
+                            <div class="stat-item">
+                                <h3>HSTU Research Center</h3>
+                                <p>Leading innovation in agricultural sciences and technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-text">
+                ResearchResearch
+            </div>
+        </section>
+
+        <!-- reachers  -->
+        <section id="reacherss" class="research-papers-section">
+            
+            <div class="section-header">
+                <span class="label">Latest Research</span>
+                <h2>Latest Research Papers</h2>
+            </div>
+            <div class="papers-container" id="papers-container">
+                <!-- Cards will be dynamically populated here via JavaScript -->
+            </div>
+            <button id="show-more" class="view-button">Show More</button>
+        </section>
+    
+
+        <!-- FAQ section  -->
+
+
+        <section class="faq-section">
+            <div class="section-header">
+                <!-- <span class="label">Latest Events</span> -->
+                <h2>HSTU Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-icon">
+                    <!-- FAQ Icon (SVG) -->
+                    <img src="images/faq.jpg" alt="FAQ Icon" class="faq-image">
+                </div>
+                <div class="faq-content">
+                    <h2 class="section-title"><span class="greens">HSTU Frequently Asked Questions</span></h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>What courses are offered at HSTU?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">HSTU offers a variety of undergraduate and postgraduate programs in disciplines such as Agriculture, Engineering, Computer Science, Business, Social Sciences, and Veterinary Medicine.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>How can I apply for admission at HSTU?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">You can apply for admission through the official HSTU admission portal during the admission period. Keep an eye on the university's official website for announcements.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>What is the admission process for international students?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">International students can apply through the university’s international admission office. The requirements may include academic qualifications, proof of English proficiency, and other relevant documents.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>What facilities are available on campus?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">HSTU provides facilities such as modern laboratories, libraries, hostels, sports facilities, research centers, medical services, and cafeterias.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>Are there any scholarship opportunities at HSTU?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">Yes, HSTU offers scholarships based on merit, financial need, and for specific categories like international students or those excelling in particular fields.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>Does HSTU offer any extracurricular activities?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">Yes, HSTU encourages students to participate in extracurricular activities, including sports, cultural programs, debating, and other student clubs.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>How do I get my academic transcripts or certificates?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">To get your academic transcripts or certificates, you need to apply to the registrar’s office at HSTU. Details are available on the university’s website.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question">
+                                <span>What are the tuition fees for different programs?</span>
+                                <svg class="faq-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </h3>
+                            <p class="faq-answer">Tuition fees vary depending on the program and level of study. For detailed information, please refer to the fee structure available on the HSTU website or contact the admissions office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Form Section -->
+    
+    <section id="contact" class="co">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or concerns, feel free to reach out to us.</p>
+        </div>
+        <section class="contact-section">
+        
+            <div class="contact-infos">
+                <div class="info-card">
+                    <img src="images/2.png" alt="">
+                    <h3>Address</h3>
+                    <p>Hajee Mohammad Danesh Science And Technology University<br>Dinajpur<br>5200</p>
+                </div>
+                <div class="info-card">
+                    <img src="images/3.png" alt="">
+                    <h3>Contact</h3>
+                    <p>Mobile: (+880) 1780 - 946249<br>Mail: mahmudulabin@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <img src="images/4.png" alt="">
+                    <h3>Office Hour</h3>
+                    <p>Sunday - Thursday: 09:00 AM - 04:00 PM<br>Sunday &amp; Monday: 10:30 - 22:00</p>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Questions?<br>Feel free to contact us.</h2>
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Subject" required>
+                        <input type="tel" placeholder="Phone" required>
+                    </div>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!-- </section> -->
+    
+    
+
+
+    <!-- footer  -->
+
+    <footer id="footer" class="footer">
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">About Us</h3>
+                    <p>At HSTU, we provide exceptional educational opportunities with expert faculty, innovative teaching methods, and a commitment to your academic and personal growth.</p>
+
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about-us-section">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog-section">Blog</a></li>
+                        <!-- <li><a href="#contact-us-section">Contact</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fa fa-envelope"></i> mahmudulabin@gmail.com</li>
+                        <li><i class="fa fa-phone"></i> +880 1780946249</li>
+                        <li><i class="fa fa-map-marker"></i> Dinajpur,5200,Dhaka</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2024 Varsity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="./script.js"></script>
+    <script src="./auth.js"></script>
+    <script src="slid.js"></script>
+    <script src="./course.js"></script>
+    <script src="./tricker.js"></script>
+    <script src="./dummy.js"></script>
+    <script src="./blog_card.js"></script>
+    <script src="./papers.js"></script>
+    <script src="js/tr.js"></script>
+    <script src="./navbardrop.js"></script>
+    <!-- <script src="./nabAuth.js"></script> -->
+    <!-- <script src="./div.js"></script> -->
+    <!-- <script src="js/tr.js"></script> -->
+</body>
+
+</html>

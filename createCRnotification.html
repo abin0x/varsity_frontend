@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Notification</title>
+    <link rel="stylesheet" href="createCRnotification.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="crDashboard.html" class="link">CR Dashboard</a>
+            <a href="blog.html" class="link">Create Blog</a>
+            <a href="submitReachers.html" class="link">Research Paper</a>
+            <a href="profile.html" class="link">About Me</a>
+            <a href="profileUpdate.html" class="link">Profile Update</a>
+            <a id="logout-button" class="logout-button">Logout</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Create CR Notification</h1>
+    </header>
+    <div class="container">
+        <form id="notification-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required class="input">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required class="form-textarea"></textarea>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required class="form-select">
+                <option value="">Select Course</option>
+            </select>
+
+            <label for="course_code">Course Code:</label>
+            <input type="text" id="course_code" name="course_code" class="input">
+
+            <label for="file">Attach File:</label>
+            <input type="file" id="file" name="file" class="input">
+
+            <label for="for_teachers">For Teachers:</label>
+            <select id="for_teachers" name="for_teachers" multiple class="form-select"></select>
+
+            <button type="submit" class="login-button">Create Notification</button>
+            <div id="response-message" class="message"></div>
+        </form>
+    </div>
+
+    <script src="createCRnotification.js"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>

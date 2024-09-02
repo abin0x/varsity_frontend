@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Research Paper</title>
+    <!-- <link rel="stylesheet" href="div.css">  -->
+     <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="teacherDashboard.html" class="link">Teacher</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="createCourse.html" class="link">Course</a>
+            <a href="assignment.html" class="link">Assignment</a>
+            <a href="notification.html" class="link">Notification</a>
+            <a href="#about" class="link">About</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Edit Research Paper</h1>
+    </header>
+
+    <div class="container">
+        <h1 class="heading">Edit Research Paper</h1>
+        <form id="edit-paper-form" class="form">
+            <input type="hidden" id="paper-id">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" id="title" name="title" class="input" required>
+
+            <!-- <label for="author" class="form-label">Author:</label> -->
+            <!-- <input type="text" id="author" name="author" class="input" required> -->
+
+            <label for="content" class="form-label">Content:</label>
+            <textarea id="content" name="content" class="form-textarea" rows="6" required></textarea>
+
+            <label for="document" class="form-label">Document:</label>
+            <input type="file" id="document" name="document" class="input" required>
+
+
+            <label for="img_url" class="form-label">Image URL:</label>
+            <input type="url" id="img_url" name="img_url" class="input" required>
+
+            <!-- Assign unique ID to the submit button -->
+            <button type="submit" class="login-button" id="save-button">Save Changes</button>
+            <button type="button" id="cancel-button" class="logout-button">Cancel</button>
+        </form>
+    </div>
+    
+    <script src="updatePaper.js"></script> <!-- Link to JavaScript file -->
+    <script src="./ham.js"></script>
+</body>
+</html>

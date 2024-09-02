@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="profileUpdate.html" class="link">Profile Update</a>
+            <a href="studentDashboard.html" class="link">Dashboard</a>
+            <a href="assignmentSubmit.html" class="link">Submit Assignment</a>
+            <a href="stdAssignment.html" class="link">Assignment</a>
+            <a href="StdNotification.html" class="link">Notification</a>
+            
+        </div>
+    </nav>
+    <header>
+        <h1>Profile</h1>
+    </header>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-7">
+                <div class="card p-3 py-4">
+                    <div class="text-center">
+                        <img id="profile-image" src="default_image.jpg" width="550"  alt="Profile Image">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h5 id="username">Username</h5>
+                        <p id="full-name">Full Name</p>
+                        <p><strong>Email:</strong> <span id="email">email@example.com</span></p>
+                        <p><strong>User Type:</strong> <span id="user-type">User Type</span></p>
+                        <div id="description" class="mt-3">
+                            <!-- Description based on user type will be inserted here -->
+                        </div>
+                        <ul class="social-list mt-3">
+                            <li><a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://x.com/?lang=en" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.google.co.uk/" target="_blank" class="social-icon"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="profile.js"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>

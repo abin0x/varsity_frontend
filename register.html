@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>+880 1780-946249</span>
+                <span>mahmudulabin@email.com</span>
+            </div>
+            
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo (3).png" alt=""></a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a id="logout-button" class="logout-button">Logout</a></li> -->
+                    <!-- <button id="logout-button" class="logout-button">Logout</button> -->
+    
+                    <!-- <li><a href="#">Shop</a></li> -->
+                    <li><a href="#courses">Course</a></li>
+                    <li><a href="#team">Teacher</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#reacherss">Research </a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="centered-section">
+        <div class="button-container">
+            <a href="login.html" class="button">Login</a>
+            <a href="register.html" class="button">Signup</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading">Create an Account</div>
+        <form id="registration-form" class="form">
+            <label for="user_type" class="form-label">Are you</label>
+            <select id="user_type" name="user_type" class="input" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="cr">Class Representative</option>
+            </select>
+
+            <input required class="input" type="text" name="username" id="username" placeholder="Enter your username">
+
+            <input required class="input" type="email" name="email" id="email" placeholder="Enter your email">
+
+            <input required class="input" type="text" name="first_name" id="first_name" placeholder="Enter your first name">
+
+            <input required class="input" type="text" name="last_name" id="last_name" placeholder="Enter your last name">
+
+            <input required class="input" type="password" name="password" id="password" placeholder="Enter your password">
+
+            <input required class="input" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+
+            <label for="profile_image" class="form-label">Profile Image</label>
+            <input type="file" id="profile_image" name="profile_image" class="input" accept="image/*">
+            <span class="file-chosen" id="file-chosen">No file chosen</span>
+
+            <input class="signup-button" type="submit" value="Register">
+
+            <span class="agreement"><a href="login.html">Already have an account? Login here</a></span>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+        
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                // Optionally toggle hamburger lines (for animation)
+                hamburger.classList.toggle('active');
+            });
+        });
+        </script>
+    <script src="./auth.js"></script>
+</body>
+</html>

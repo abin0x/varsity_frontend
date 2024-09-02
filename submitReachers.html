@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper Submission</title>
+    <link rel="stylesheet" href="submitReachers.css"> <!-- Adjusted to use assignment.css for consistency -->
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="teacherDashboard.html" class="link">Teacher</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="createCourse.html" class="link">Course</a>
+            <a href="assignment.html" class="link">Assignment</a>
+            <a href="notification.html" class="link">Notification</a>
+            <a href="#about" class="link">About</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Submit Your Research Paper</h1> <!-- Adjusted header text for research paper submission -->
+    </header>
+
+    <div class="container">
+        <form id="paper-form" enctype="multipart/form-data" class="form">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" id="title" name="title" class="input" required><br>
+
+            <label for="content" class="form-label">Content:</label>
+            <textarea id="content" name="content" class="input" required></textarea><br>
+
+            <label for="img_url" class="form-label">Upload Image:</label>
+            <input type="file" id="img_url" name="img_url" class="input" accept="image/*"><br>
+
+            <label for="document" class="form-label">Upload Document:</label>
+            <input type="file" id="document" name="document" class="input" required><br>
+
+            <button type="submit" class="login-button">Submit Paper</button>
+        </form>
+    </div>
+    
+    <script src="submitReachers.js"></script> <!-- Adjusted to use assignment.js for consistency -->
+    <script src="./ham.js"></script>
+</body>
+</html>

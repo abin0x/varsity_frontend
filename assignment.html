@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="assignment.css">
+    <!-- <link rel="stylesheet" href="./ham.css"> -->
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="teacherDashboard.html" class="link">Teacher</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="createCourse.html" class="link">Course</a>
+            <a href="assignment.html" class="link">Assignment</a>
+            <a href="notification.html" class="link">Notification</a>
+            <a href="#about" class="link">About</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Create Assignment</h1>
+    </header>
+
+    <div class="container">
+        <h1 class="heading">Create Assignment</h1>
+        <form id="assignmentForm" class="form">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" id="title" name="title" class="input" required>
+
+            <label for="description" class="form-label">Description:</label>
+            <textarea id="description" name="description" class="input" required></textarea>
+
+            <label for="due_date" class="form-label">Due Date:</label>
+            <input type="date" id="due_date" name="due_date" class="input" required>
+
+            <label for="course" class="form-label">Course:</label>
+            <select id="course" name="course" class="input" required>
+                <!-- Options will be dynamically populated -->
+            </select>
+
+            <!-- <label for="for_students" class="form-label">Assign to Students:</label>
+            <select id="for_students" name="for_students" class="input" multiple required>
+               
+            </select> -->
+
+            <button type="submit" class="login-button">Create Assignment</button>
+        </form>
+    </div>
+    
+   
+    <script src="assignment.js"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>

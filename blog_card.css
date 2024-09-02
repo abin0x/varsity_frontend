@@ -1,0 +1,130 @@
+.bl{
+    background-color: #FFFFFF;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Blog Container to display 4 cards in one row */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.tblog{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.tpblog{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Blog Card: Set the card size to fit 4 per row */
+.blog-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
+    transition: filter 0.3s ease;
+}
+
+.blog-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows content to fill available space */
+    overflow: hidden;
+}
+
+.blog-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.blog-description {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 1px; /* Increased margin for better spacing */
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #2176c7;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 10px;
+}
+@media (max-width: 1200px) {
+    .blog-card {
+        width: calc(33.33% - 20px); /* 3 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .blog-card {
+        width: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-card {
+        width: calc(100% - 20px); /* 1 card per row on small screens */
+    }
+}
+.show-more-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.show-more-btn {
+    margin-top: 20px;
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show-more-btn:hover {
+    background-color: #2176c7;
+}

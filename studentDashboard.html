@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./studentDashboard.css">
+</head>
+<body>
+
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="assignmentSubmit.html" class="link">Submit Assignment</a>
+            <a href="stdAssignment.html" class="link">Assignment</a>
+            <a href="StdNotification.html" class="link">Notification</a>
+            <a href="blog.html" class="link">Create Blog</a>
+            <a href="submitReachers.html" class="link">Reacher Paper</a>
+            <a href="crNotifications.html" class="link">CR Notification</a>
+            <a href="profile.html" class="link">About Me</a>
+            <a href="profileUpdate.html" class="link">Profile Update</a>
+           <a id="logout-button" class="logout-button">Logout</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Notifications Dashboard</h1>
+    </header>
+    <div class="notification-ticker ticker-wrapper">
+        <span class="ticker-content ticker" id="notification-content">Loading notifications...</span>
+    </div>
+
+<div id="student-dashboard">
+    <!-- Dashboard data will be injected here by JavaScript -->
+</div>
+
+
+<script src="studentDashboard.js"></script>
+<script src="./ham.js"></script>
+<script src="./auth.js"></script>
+<script src="./tricker.js"></script>
+<script src="./blog.js"></script>
+</body>
+</html>

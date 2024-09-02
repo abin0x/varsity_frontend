@@ -1,0 +1,57 @@
+<!-- create_course.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+    <link rel="stylesheet" href="createCourse.css"> <!-- Updated link to CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="teacherDashboard.html" class="link">Teacher</a>
+            <a href="profileUpdate.html" class="link">Profile</a>
+            <a href="assignment.html" class="link">Assignment</a>
+            <a href="notification.html" class="link">Notification</a>
+            <a href="#about" class="link">About</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Create Course</h1>
+    </header>
+    <div class="container">
+        <form id="create-course-form" class="form">
+            <div class="form-group">
+                <label for="title" class="form-label">Course Title</label>
+                <input type="text" id="title" name="title" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="department" class="form-label">Department</label>
+                <input type="text" id="department" name="department" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" name="description" class="form-textarea" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="course_code" class="form-label">Course Code</label>
+                <input type="text" id="course_code" name="course_code" class="input">
+            </div>
+            <div class="form-group">
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" id="image" name="image" class="input" accept="image/*" required>
+            </div>
+            <button type="submit" class="login-button">Create Course</button>
+        </form>
+    </div>
+    <script src="createCourse.js"></script>
+    <script src="./ham.js"></script>
+</body>
+</html>
